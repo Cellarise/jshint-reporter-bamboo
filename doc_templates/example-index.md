@@ -9,7 +9,7 @@ for (i=0; i < 10; i = i + 1) {
 When you pass the file to a `new JshintReporterBamboo()` using 'results' as report results.
 
 ```js
-var JshintReporterBamboo = require('jshint-reporter-bamboo');
+var JshintReporterBamboo = require('{name}');
 var jshint = require('gulp-jshint');
 var results = {};
 gulp.src('./lib')
@@ -25,8 +25,8 @@ Then you'll get a jshint report:
 
 ```js
 //jshint ignore:start
-var author = "John Barry";
-var name = "jshint-reporter-bamboo";
-var description = "A reporter for gulp-jshint which produces a report compatible with Atlassian Bamboo Mocha Test Parser.";
-var version = "0.0.0";
+var author = "{author}";
+var name = "{name}";
+var description = "{description}";
+var version = "{version}";
 ```

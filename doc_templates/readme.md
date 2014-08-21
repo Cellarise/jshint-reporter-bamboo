@@ -1,9 +1,9 @@
-# jshint-reporter-bamboo
-[![view on npm](http://img.shields.io/npm/v/jshint-reporter-bamboo.svg)](https://www.npmjs.org/package/jshint-reporter-bamboo)
-[![npm module downloads per month](http://img.shields.io/npm/dm/jshint-reporter-bamboo.svg)](https://www.npmjs.org/package/jshint-reporter-bamboo)
-[![Dependency Status](https://david-dm.org/Cellarise/jshint-reporter-bamboo.svg)](https://david-dm.org/Cellarise/jshint-reporter-bamboo)
+# {name}
+[![view on npm](http://img.shields.io/npm/v/{name}.svg)](https://www.npmjs.org/package/{name})
+[![npm module downloads per month](http://img.shields.io/npm/dm/{name}.svg)](https://www.npmjs.org/package/{name})
+[![Dependency Status](https://david-dm.org/Cellarise/{name}.svg)](https://david-dm.org/Cellarise/{name})
 
-> A reporter for gulp-jshint which produces a report compatible with Atlassian Bamboo Mocha Test Parser.
+> {description}
 
 
 ##Usage 
@@ -15,7 +15,7 @@ This reporter for gulp-jshint requires an object to store the results of each fi
 Require this package and use as part of your gulp-jshint task.
 
 ```js
-var JshintReporterBamboo = require('jshint-reporter-bamboo');
+var JshintReporterBamboo = require('{name}');
 var jshint = require('gulp-jshint');
 var results = {};
 gulp.src('./lib')
@@ -29,7 +29,7 @@ gulp.src('./lib')
 
 
 # API
-{{>main}}
+{~lb}{~lb}>main{~rb}{~rb}
 *documented by [jsdoc-to-markdown](https://github.com/75lb/jsdoc-to-markdown)*.
 
 
@@ -37,4 +37,4 @@ gulp.src('./lib')
 
 MIT License (MIT)
 
-Copyright (c) 2014 John Barry
+Copyright (c) 2014 {author}

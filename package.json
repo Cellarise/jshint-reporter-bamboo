@@ -2,14 +2,14 @@
   "author": "John Barry",
   "name": "jshint-reporter-bamboo",
   "description": "A reporter for gulp-jshint which produces a report compatible with Atlassian Bamboo Mocha Test Parser.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/Cellarise/jshint-reporter-bamboo.git"
   },
   "config": {
-    "build": "3",
-    "buildTimestamp": "2014-08-17T19:49:08.704+10:00",
+    "build": "5",
+    "buildTimestamp": "2014-08-21T18:49:19.913+10:00",
     "adminEmail": "admin@cellarise.com"
   },
   "main": "./lib",
@@ -21,11 +21,13 @@
   "devDependencies": {
     "yadda": "^0.10.14",
     "gulp": "^3.8.6",
-    "gulp-mocha": "^0.5.2",
     "gulp-load": "^0.1.1",
-    "gulp-jsdoc-to-markdown": "^0.1.3",
-    "gulp-dust-compile-render": "^0.1.4",
+    "run-sequence": "^0.3.6",
+    "gulp-mocha": "^0.5.2",
+    "gulp-rename": "^1.2.0",
     "gulp-concat": "^2.3.4",
-    "gulp-rename": "^1.2.0"
+    "jsdoc-to-markdown": "^0.5.4",
+    "gulp-jsdoc-to-markdown": "^0.1.3",
+    "gulp-dust-compile-render": "^0.1.4"
   }
 }

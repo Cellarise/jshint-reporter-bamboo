@@ -2,12 +2,12 @@
 "use strict";
 var rename = require("gulp-rename");
 var fs = require('fs');
-var GulpDustCompileRender = require('gulp-dust-compile-render');
 
 module.exports = function(gulp) {
     gulp.task("docs-pre", function(cb){
         var dest = "doc_templates";
         var context = JSON.parse(fs.readFileSync('package.json'));
+        var GulpDustCompileRender = require('../lib');
 
         gulp.src([dest + '/**/*.dust.md'])
             .pipe(new GulpDustCompileRender(context))
