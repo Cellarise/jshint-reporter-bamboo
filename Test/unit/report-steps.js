@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var path = require('path');
 var jshint = require('gulp-jshint');
 var English = require('yadda').localisation.English;
+var assert = require('assert');
 
 /* Feature: Create bamboo reporter for JSHint */
 module.exports = (function() {
@@ -12,7 +13,7 @@ module.exports = (function() {
     /*Scenario: Lint code with no errors */
         .define("Given I have a $name Javascript file", function(filename, done) {
             this.world.template = path.join(__dirname, '../resources/' + filename);
-            this.assert(fs.existsSync(this.world.template + '.js'));
+            assert(fs.existsSync(this.world.template + '.js'));
             done();
         })
         .define("When I lint the file", function(done) {
@@ -45,7 +46,7 @@ module.exports = (function() {
             delete actual.failures;
             actual = JSON.stringify(actual).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
             expected = JSON.stringify(expected).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
-            this.assert.equal(actual, expected);
+            assert.equal(actual, expected);
             done();
         });
 })();

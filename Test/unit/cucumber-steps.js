@@ -1,6 +1,7 @@
 /* jslint node: true */
 "use strict";
 var English = require('yadda').localisation.English;
+var assert = require('assert');
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var fs = require('fs');
@@ -27,7 +28,7 @@ module.exports = (function () {
             var actual = this.world.report;
             actual = JSON.stringify(actual).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
             expected = JSON.stringify(expected).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
-            this.assert.equal(actual, expected);
+            assert.equal(actual, expected);
             done();
         });
 })();

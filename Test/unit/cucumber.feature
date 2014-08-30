@@ -1,4 +1,4 @@
-@libraries=report-steps
+@libraries=unit/report-steps.js
 @issue=MSJSHRB-5
 Feature: Cucumber report output format
   As a developer
