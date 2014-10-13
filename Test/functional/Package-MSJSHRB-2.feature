@@ -1,4 +1,4 @@
-Feature: Create bamboo reporter for JSHint
+Feature: Package: Develop bamboo reporter for JSHint.
   As a developer
   I can lint my code and generate a report compatible with the Atlassian Bamboo Mocha Test Parser
   So that my build server can track the lint quality of my code

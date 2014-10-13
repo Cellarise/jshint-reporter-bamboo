@@ -14,7 +14,7 @@
       "title": "JSHint lint-errors.js",
       "fullTitle": " C:\\Atlassian\\NPM\\jshint-reporter-bamboo\\Test\\resources\\lint-errors.js",
       "duration": 32,
-      "error": "7 JSHint Failures JSHint: 1. line undefined, char undefined: \n2. line undefined, char undefined: \n3. line undefined, char undefined: \n4. line undefined, char undefined: \n5. line undefined, char undefined: \n6. line undefined, char undefined: \n7. line undefined, char undefined: "
+      "error": "7 JSHint Failures JSHint: 1. line 1, char 6: &apos;i&apos; is not defined.\n2. line 1, char 11: &apos;i&apos; is not defined.\n3. line 1, char 19: &apos;i&apos; is not defined.\n4. line 1, char 23: &apos;i&apos; is not defined.\n5. line 2, char 5: &apos;ctr&apos; is not defined.\n6. line 2, char 11: &apos;ctr&apos; is not defined.\n7. line 2, char 17: &apos;i&apos; is not defined."
     }
   ],
   "passes": [],

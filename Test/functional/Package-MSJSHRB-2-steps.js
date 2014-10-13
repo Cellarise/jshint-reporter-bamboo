@@ -40,12 +40,26 @@ module.exports = (function() {
             delete actual.stats.start;
             delete actual.stats.end;
             delete actual.stats.duration;
-            delete expected.passes;
-            delete expected.failures;
-            delete actual.passes;
-            delete actual.failures;
-            actual = JSON.stringify(actual).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
-            expected = JSON.stringify(expected).replace(/[^a-zA-Z ]/g, "").substring(0, 10);
+
+            if(actual.failures.length > 0){
+                delete actual.failures[0].duration;
+                delete actual.failures[0].fullTitle;
+            }
+            if(expected.failures.length > 0){
+                delete expected.failures[0].duration;
+                delete expected.failures[0].fullTitle;
+            }
+            if(actual.passes.length > 0){
+                delete actual.passes[0].duration;
+                delete actual.passes[0].fullTitle;
+            }
+            if(expected.passes.length > 0){
+                delete expected.passes[0].duration;
+                delete expected.passes[0].fullTitle;
+            }
+
+            actual = JSON.stringify(actual);
+            expected = JSON.stringify(expected);
             assert.equal(actual, expected);
             done();
         });
