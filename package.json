@@ -88,10 +88,8 @@
   },
   "directories": {
     "lib": "lib",
-    "bin": "bin",
     "doc": "doc",
     "tasks": "tasks",
-    "templates": "templates",
     "test": "Test",
     "reports": "Reports",
     "build": "Build"
